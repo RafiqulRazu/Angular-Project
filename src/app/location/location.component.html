@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table table-striped">
+
+        <tr>
+            <th>name</th>
+            <th>city</th>
+            <th>state</th>
+            <th>unit</th>
+        </tr>
+        <tr *ngfor = "let location of locations | async">
+            <td>{{location.name}}</td>
+            <td>{{location.city}}</td>
+            <td>{{location.state}}</td>
+            <td>{{location.availableUnits}}</td>
+        </tr>
+
+
+    </table>
+</div>
